@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Календарь | FC 25 Ивент</title>
+    <link rel="stylesheet" href="./Style/style.css">
+</head>
+<body>
+    <header class="calendar-header">
+        <div class="header-top">
+            <div class="logo-container">
+                <img src="./Assets/logo.jpg" alt="FC 25" class="logo">
+                <h1>Месяц SUMMER FEST</h1>
+            </div>
+            <nav>
+                <a href="#" id="logout" class="nav-button logout-button">Выйти</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="user-info">
+            <div class="user-avatar pulse">
+                <img src="./Assets/avatar.jpg" alt="Аватар">
+            </div>
+            <div class="user-details">
+                <h2 id="usernameDisplay">Игрок</h2>
+                <div class="level-container">
+                    <div class="level-bar">
+                        <div class="level-progress" id="levelProgress"></div>
+                    </div>
+                    <span class="level-text">Уровень <span id="currentLevel">1</span> (<span id="currentXP">0</span>/<span id="nextLevelXP">100</span> XP)</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="calendar-section">
+            <h2 class="section-title">30-дневный марафон</h2>
+            <div class="calendar-grid" id="calendarGrid">
+                <!-- Динамически генерируется через JS -->
+            </div>
+        </section>
+
+        <section class="tasks-section">
+            <div class="tasks-container">
+                <div class="daily-tasks">
+                    <h3><img src="https://www.ea.com/assets/images/daily-icon.png" alt=""> Ежедневные задания</h3>
+                    <ul id="dailyTasks">
+                        <!-- Динамически генерируется через JS -->
+                    </ul>
+                </div>
+                <div class="weekly-tasks">
+                    <h3><img src="https://www.ea.com/assets/images/weekly-icon.png" alt=""> Еженедельные задания</h3>
+                    <ul id="weeklyTasks">
+                        <!-- Динамически генерируется через JS -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>© 2025 Electronic Arts Inc. Все права защищены.</p>
+    </footer>
+
+    <script src="./Script/calendar.js"></script>
+    <script src="./Script/auth.js"></script>
+</body>
+</html>
